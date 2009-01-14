@@ -43,6 +43,13 @@ my @tests = (
     '["\"://\""]',
     '"~foo"',
     '"\/"',  # escaped solidus
+    '"\""',
+    '"\b"',
+    '"\f"',
+    '"\n"',
+    '"\r"',
+    '"\t"',
+    '"\u0001"',
 );
 
 plan tests => scalar @tests * (2 + $HAS_JSON) * 2;
